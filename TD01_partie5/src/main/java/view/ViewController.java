@@ -5,8 +5,11 @@
  */
 package view;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -18,7 +21,7 @@ import model.Etudiant;
  *
  * @author oscar
  */
-public class ViewController {
+public class ViewController implements Initializable{
 
     @FXML
     private Button sendButton;
@@ -55,7 +58,6 @@ public class ViewController {
 
     @FXML
     public void handleButton(ActionEvent e) {
-        init();
         try {
             int idField = Integer.parseInt(id.getText());
             Etudiant et = new Etudiant(idField, prenom.getText(), nom.getText());
@@ -68,7 +70,10 @@ public class ViewController {
         } catch (Exception error) {
             id.setStyle("-fx-control-inner-background: RED");
         }
-        System.out.println(id.getText());
-        System.out.println("add");
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+               init();
     }
 }
