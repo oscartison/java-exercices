@@ -1,27 +1,17 @@
 package exemples;
 
+/**
+ * Classe de test de la classe MyThread
+ */
 public class TestMyThread {
 
     public static void main(String[] args) {
-        MyRunnable r = new MyRunnable("one");
-        Thread t = new Thread(r);
+        MyThread t = new MyThread("one");
         t.start();
-        for (int i = 0; i < 10; ++i) {
-            for (int j = 0; j < 10000000; ++j) ;
-            System.out.println("TestMyRunnable: " + i);
-        }
-        new Thread(() -> {
-            for (int i = 0; i < 10; ++i) {
-                for (int j = 0; j < 50000; ++j) ;
-                System.out.println("MyThread: lambda: " + i);
-                // System.out.println("MyThread: " + name + ": " + i);
-            }
-        }).start();
-
-        for (int i = 0; i < 10; ++i) {
+        // t.run();
+        for (int i = 0; i < 10000; ++i) {
             for (int j = 0; j < 50000; ++j) ;
             System.out.println("TestMyThread: " + i);
         }
     }
-
 }

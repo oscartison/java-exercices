@@ -1,12 +1,15 @@
 package exemples;
 
+/**
+ * Classe de test de la classe MyTimer
+ */
 public class TestMyTimer {
 
     public static void main(String[] args) {
         MyTimer myTimer = new MyTimer(4000);
         myTimer.start();
         try {
-            Thread.sleep(7011);
+            Thread.sleep(10001);
         } catch (InterruptedException e) {
             System.out.println("TestMyTimer: exception " + e);
         }

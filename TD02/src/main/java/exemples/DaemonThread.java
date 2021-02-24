@@ -1,11 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exemples;
 
-public class DeamonThread extends Thread {
+/**
+ * Exemple de thread demon ou utilisateur
+ */
+public class DaemonThread extends Thread {
 
     public void run() {
         for (int n = 0; n < 42; ++n) {
@@ -19,14 +17,14 @@ public class DeamonThread extends Thread {
     }
 
     public static void main(String[] args) {
-        DeamonThread d;
-        d = new DeamonThread();
+        DaemonThread d;
+        d = new DaemonThread();
         d.setDaemon(true);
         d.start();
         try {
             System.out.println("DaemonThread main: i do nothing during a while");
-            sleep(0);
-             d.join();
+            sleep(7110);
+            // d.join();
         } catch (InterruptedException e) {
             System.out.println("DaemonThread: exception " + e);
         }

@@ -1,5 +1,9 @@
 package exemples;
 
+/**
+ * Classe thread affichant un petit message a intervalle regulier : exemple
+ * d'utilisation de la methode Thread.sleep
+ */
 public class MyTimer extends Thread {
 
     private int laps;
