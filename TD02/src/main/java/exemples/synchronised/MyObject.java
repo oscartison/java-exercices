@@ -12,7 +12,7 @@ public class MyObject {
         this.name = name;
     }
 
-    // public void show() {
+     //public void show() {
     public synchronized void show() {
         String nom = Thread.currentThread().getName();
         System.out.println("My object: thread " + nom
@@ -25,7 +25,7 @@ public class MyObject {
                 + ",objet " + name + " out show");
     }
 
-    // public void print() {
+     //public void print() {
     public synchronized void print() {
         String nom = Thread.currentThread().getName();
         System.out.println("My object: thread  " + nom

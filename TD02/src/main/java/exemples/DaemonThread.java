@@ -23,8 +23,8 @@ public class DaemonThread extends Thread {
         d.start();
         try {
             System.out.println("DaemonThread main: i do nothing during a while");
-            sleep(7110);
-            // d.join();
+            sleep(0);
+             d.join();
         } catch (InterruptedException e) {
             System.out.println("DaemonThread: exception " + e);
         }
