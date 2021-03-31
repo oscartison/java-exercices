@@ -1,6 +1,7 @@
 package exemples.bank;
 
 public class Compte {
+
     private int somme;
 
     public  Compte(int somme) {
@@ -19,5 +20,5 @@ public class Compte {
         if(this.somme - somme >= 0) {
             this.somme -= somme;
         }
-    }
+    }    
 }
