@@ -122,7 +122,7 @@ public class FxmlController implements Initializable, Observer {
     public void initialize(URL url, ResourceBundle rb
     ) {
         threadSpinner.setValueFactory(
-                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100));
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10));
         sortChoice.getItems().add("Bubble sort");
         sortChoice.getItems().add("Merge sort");
         sortChoice.getSelectionModel().selectLast();
