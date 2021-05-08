@@ -27,7 +27,7 @@ import g55315.model.Observer;
 import g55315.model.StateSort;
 
 /**
- *
+ * represents the controller of the window created in fxml
  * @author oscar
  */
 public class FxmlController implements Initializable, Observer {
@@ -80,6 +80,11 @@ public class FxmlController implements Initializable, Observer {
     public FxmlController() {
     }
 
+    /**
+     * handles the button
+     * @param e event
+     * @throws InterruptedException
+     */
     @FXML
     public void handleButton(ActionEvent e) throws InterruptedException {
         int nbThreads = threadSpinner.getValue();
@@ -118,6 +123,11 @@ public class FxmlController implements Initializable, Observer {
 
     }
 
+    /**
+     * initializes the state of the window at the begin
+     * @param url
+     * @param rb
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb
     ) {
@@ -134,18 +144,13 @@ public class FxmlController implements Initializable, Observer {
         configurationChoice.getSelectionModel().select(0);
         leftStatus.setText("Nombre de threads actifs: " + Thread.activeCount());
 
-        init();
-    }
-
-    public void init() {
         nameCol.setCellValueFactory(new PropertyValueFactory<>("sort"));
         sizeCol.setCellValueFactory(new PropertyValueFactory<>("size"));
         swapCol.setCellValueFactory(new PropertyValueFactory("nbOperations"));
         durationCol.setCellValueFactory(new PropertyValueFactory<>("dur"));
 
-
-       // chart = new LineChart<>(taille, operations);
     }
+
 
     @Override
     public void update(Observable observable, Object arg) {

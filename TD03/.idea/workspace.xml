@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb3a5aa-fd40-43fe-94cc-363d8ff9c050" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TD03.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/data/sqlite/stib.db" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/data/sqlite/stib.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/DemoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dijkstra/StibGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dijkstra/StibGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dijkstra/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/LineDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/LineDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/StopDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/StopDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/jdbc/StopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/jdbc/StopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/repository/StopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/repository/StopRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/presenter/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/view/FxmlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/view/FxmlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/src/main/resources/FXML/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/resources/FXML/view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/main/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/StateSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/StateSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/view/FxmlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/view/FxmlController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,5 +43,16 @@
       <updated>1620283808453</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

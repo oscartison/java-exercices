@@ -10,6 +10,12 @@ public class MergeSort extends Sort {
         super(arr);
     }
 
+    /**
+     * function that sorts an array using merge sort
+     * @param l the left side of the array
+     * @param m rhe middle of the array
+     * @param r the ride side of the array
+     */
     //https://www.geeksforgeeks.org/merge-sort/
     public void merge(int l, int m, int r) {
         // Find sizes of two subarrays to be merged
@@ -98,6 +104,11 @@ public class MergeSort extends Sort {
         }
     }
 
+    /**
+     * sorts an array
+     * @param l the begin of the array
+     * @param r the end of the array
+     */
     // Main function that sorts arr[l..r] using
     // merge()
     public void sort(int l, int r) {

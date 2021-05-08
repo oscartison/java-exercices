@@ -5,7 +5,9 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * class representing a thread that sorts an array
+ */
 public class MyThread extends Thread implements Observable {
 
     private List<Observer> listObservers;
@@ -13,6 +15,13 @@ public class MyThread extends Thread implements Observable {
     private long dur;
     private String sort;
 
+    /**
+     * constructor for the class
+     * @param data the data to sort
+     * @param name the name of the array
+     * @param sort the name of the sort algorithm
+     * @param obs the observer of the thread
+     */
     public MyThread(int[] data, String name, String sort,Observer obs) {
         super(name);
         this.data = data;
@@ -38,6 +47,9 @@ public class MyThread extends Thread implements Observable {
         }
     }
 
+    /**
+     * function that is run in the thread
+     */
     @Override
     public void run() {
         synchronized(data) {

@@ -1,7 +1,7 @@
 package g55315.model;
 
 /**
- *
+ * class to sort an array using bubble sort
  * @author oscar
  */
 public class BubbleSort extends Sort{
@@ -11,9 +11,7 @@ public class BubbleSort extends Sort{
     }
 
     /**
-     * Algo du cours DEV1
-     *
-     * @param myArray
+     * algorithm that sorts an array
      */
     public void bubbleSort() {
         int n = arr.length;
