@@ -38,4 +38,14 @@ public class StationRepository implements Repository<String, StationDto> {
         return refreshItem != null;
     }
 
+    @Override
+    public String add(StationDto item) throws RepositoryException {
+        return null;
+    }
+
+    @Override
+    public void remove(String key) throws RepositoryException {
+
+    }
+
 }

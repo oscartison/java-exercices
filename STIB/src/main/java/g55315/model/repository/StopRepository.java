@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author jlc
  */
-public class StopRepository implements Repository<Integer, StopDto> {
+public class StopRepository implements Repository<String, StopDto> {
 
     private final StopDao dao;
 
@@ -30,15 +30,25 @@ public class StopRepository implements Repository<Integer, StopDto> {
     }
 
     @Override
-    public List<StopDto> get(Integer key) throws RepositoryException {
+    public List<StopDto> get(String key) throws RepositoryException {
         List<StopDto> refreshItem = dao.select(key);
         return refreshItem;
     }
 
     @Override
-    public boolean contains(Integer key) throws RepositoryException {
+    public boolean contains(String key) throws RepositoryException {
         List<StopDto> refreshItem = dao.select(key);
         return refreshItem != null;
+    }
+
+    @Override
+    public String add(StopDto item) throws RepositoryException {
+        return null;
+    }
+
+    @Override
+    public void remove(String key) throws RepositoryException {
+
     }
 
 }

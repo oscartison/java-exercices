@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bb3a5aa-fd40-43fe-94cc-363d8ff9c050" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TD03.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/data/sqlite/stib.db" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/data/sqlite/stib.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/DemoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dijkstra/StibGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dijkstra/StibGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dijkstra/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/LineDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/LineDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/StopDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/dto/StopDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/jdbc/StopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/jdbc/StopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/repository/StopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/model/repository/StopRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/presenter/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/java/g55315/view/FxmlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/java/g55315/view/FxmlController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/src/main/resources/FXML/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/src/main/resources/FXML/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STIB/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1s9TSprrxekdm8ZUla5aYpRv2Lg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../atl_Repository" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bb3a5aa-fd40-43fe-94cc-363d8ff9c050" name="Default Changelist" comment="" />
+      <created>1620283808453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620283808453</updated>
+    </task>
+    <servers />
+  </component>
+</project>

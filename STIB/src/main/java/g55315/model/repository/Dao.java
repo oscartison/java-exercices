@@ -34,6 +34,23 @@ public interface Dao<K, T extends Dto<K>> {
      */
     List<T> select(K key) throws RepositoryException;
 
+    /**
+     * Inserts an element into the resource.
+     *
+     * @param item item to insert.
+     * @return the element's key, usefull when the key is auto-generated.
+     * @throws RepositoryException if the resource can't be accessed.
+     */
+    K insert(T item) throws RepositoryException;
+
+    /**
+     * Deletes the item of the specific key from the resource.
+     *
+     * @param key key of the element to delete.
+     * @throws RepositoryException if the resource can't be accessed.
+     */
+    void delete(K key) throws RepositoryException;
+
 
 
     }

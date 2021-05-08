@@ -54,12 +54,23 @@ public class StationDao implements Dao<String, StationDto> {
 
             while (rs.next()) {
                 StationDto stat = new StationDto(rs.getString(2), rs.getInt(1));
+                dtos.add(stat);
             }
 
         } catch (SQLException e) {
             throw new RepositoryException(e);
         }
         return dtos;
+    }
+
+    @Override
+    public String insert(StationDto item) throws RepositoryException {
+        return null;
+    }
+
+    @Override
+    public void delete(String key) throws RepositoryException {
+
     }
 
 

@@ -5,8 +5,17 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * class with the algorithms on the graphs
+ */
 public class ShortestPath {
 
+    /**
+     * function that calculates the path from a certain source to each node of the graph
+     * @param graph the graph on which the shortest path is calculated
+     * @param source the source from which the paths are calculated
+     * @return the graph
+     */
     public static Graph calculateShortestPathFromSource(Graph graph, Node source) {
         source.setDistance(0);
 
@@ -32,6 +41,11 @@ public class ShortestPath {
         return graph;
     }
 
+    /**
+     * a function that gets the path with the lowest distance to a certain node
+     * @param unsettledNodes the nodes that were not calculated yet
+     * @return the node with the lowest distance
+     */
     private static Node getLowestDistanceNode(Set < Node > unsettledNodes) {
         Node lowestDistanceNode = null;
         int lowestDistance = Integer.MAX_VALUE;
@@ -44,6 +58,13 @@ public class ShortestPath {
         }
         return lowestDistanceNode;
     }
+
+    /**
+     * calculates the minimumdistance to a certain node
+     * @param evaluationNode the node to were we go
+     * @param edgeWeigh the weigh of the path to this node
+     * @param sourceNode the source node
+     */
     private static void CalculateMinimumDistance(Node evaluationNode,
                                                  Integer edgeWeigh, Node sourceNode) {
         Integer sourceDistance = sourceNode.getDistance();

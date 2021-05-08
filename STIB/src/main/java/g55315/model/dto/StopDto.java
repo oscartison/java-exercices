@@ -1,26 +1,77 @@
 package g55315.model.dto;
 
-public class StopDto extends Dto<Integer> {
-    private int id_line;
-    private int id_order;
-    private String name;
+import java.util.List;
 
-    public int getId_line() {
+/**
+ * class respresenting a stop on a line
+ */
+public class StopDto extends Dto<String> {
+    private List<Integer> id_line;
+    private int id_order;
+    private int id_station;
+
+    /**
+     * a getter for the list of lines of this stop
+     * @return the list of lines
+     */
+    public List<Integer> getId_line() {
         return id_line;
     }
 
+    /**
+     * a getter for the order of this stop
+     * @return the order of the stop
+     */
     public int getId_order() {
         return id_order;
     }
 
-    public String getName() {
-        return name;
+    /**
+     * a getter for the id of this stop
+     * @return
+     */
+    public int getId_station() {
+        return id_station;
     }
 
-    public StopDto(Integer key, int id_line, int id_order, String name) {
+    /**
+     * adds a line to the stop
+     * @param line the line to add
+     */
+    public void addLine(int line) {
+        id_line.add(line);
+    }
+
+    @Override
+    public String getKey() {
+        return super.getKey();
+    }
+
+
+    /**
+     * a function that represents the lines in a string
+     * @return a string containing al the lines of this stop
+     */
+    public String getLinesToString() {
+        String lines = "[ ";
+        for(int line: id_line) {
+            lines += line + " ";
+        }
+        lines +="]";
+        return lines;
+    }
+
+    /**
+     * the constructor of this class
+     * @param key the name of the stop
+     * @param id_line the id of the line
+     * @param id_order the order of the stop
+     * @param id_station the id of the station
+     */
+    public StopDto(String key, List<Integer> id_line, int id_order, int id_station) {
         super(key);
         this.id_line = id_line;
         this.id_order = id_order;
-        this.name = name;
+        this.id_station = id_station;
     }
 }
