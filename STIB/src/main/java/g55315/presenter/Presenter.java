@@ -1,8 +1,8 @@
 package g55315.presenter;
 
 import g55315.model.Model;
-import g55315.model.Observable;
-import g55315.model.Observer;
+import g55315.model.designpattern.Observable;
+import g55315.model.designpattern.Observer;
 import g55315.model.dto.FavoriteDto;
 import g55315.model.dto.StopDto;
 import g55315.model.exception.RepositoryException;
@@ -28,7 +28,7 @@ public class Presenter implements Observer {
         view.setCombo(model.getStationNames());
         view.setFavorites(model.getFavorites());
         view.getStations().setCellValueFactory(new PropertyValueFactory<>("key"));
-        view.getLignes().setCellValueFactory(new PropertyValueFactory<>("linesToString"));}
+        view.getLignes().setCellValueFactory(new PropertyValueFactory<>("id_line"));}
 
     /**
      * calculates path from begin station to end station
@@ -56,9 +56,8 @@ public class Presenter implements Observer {
      * @throws RepositoryException
      */
     public void searchFav(String fav) throws RepositoryException {
-        int id = Character.getNumericValue(fav.charAt(0));
-        List<FavoriteDto> favoriteDtos  = model.getFavorite(id);
-        calculatePath(favoriteDtos.get(0).getOrigin(),favoriteDtos.get(0).getDestination());
+        FavoriteDto favoriteDtos  = model.getFavorite(fav);
+        calculatePath(favoriteDtos.getOrigin(),favoriteDtos.getDestination());
     }
 
     /**
@@ -67,8 +66,7 @@ public class Presenter implements Observer {
      * @throws RepositoryException
      */
     public void deleteFav(String fav) throws RepositoryException {
-        int id = Character.getNumericValue(fav.charAt(0));
-        model.deleteFav(id);
+        model.deleteFav(fav);
 
     }
 
@@ -78,8 +76,8 @@ public class Presenter implements Observer {
      * @param end the end station
      * @throws RepositoryException
      */
-    public void addFavorite(String begin,String end) throws RepositoryException {
-        model.insertFavoite(begin, end);
+    public void addFavorite(String begin,String end,String name) throws RepositoryException {
+        model.insertFavoite(begin, end,name);
     }
 
     @Override

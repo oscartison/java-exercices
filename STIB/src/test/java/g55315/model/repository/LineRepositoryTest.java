@@ -68,18 +68,5 @@ public class LineRepositoryTest {
         Mockito.verify(mock, times(1)).select(null);
     }
 
-    /**
-     * Test of add method, of class LineRepository.
-     */
-    @Test
-    public void testAdd() throws Exception {
-    }
 
-    /**
-     * Test of remove method, of class LineRepository.
-     */
-    @Test
-    public void testRemove() throws Exception {
-    }
-    
 }

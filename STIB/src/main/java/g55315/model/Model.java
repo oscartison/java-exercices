@@ -1,6 +1,8 @@
 package g55315.model;
 
 import g55315.model.config.ConfigManager;
+import g55315.model.designpattern.Observable;
+import g55315.model.designpattern.Observer;
 import g55315.model.dijkstra.StibGraph;
 import g55315.model.dto.FavoriteDto;
 import g55315.model.dto.StationDto;
@@ -17,7 +19,7 @@ import java.util.List;
 /**
  * the model of the whole application
  */
-public class Model implements Observable{
+public class Model implements Observable {
 
     private List<Observer> listObservers;
     private StibGraph stibGraph;
@@ -60,8 +62,7 @@ public class Model implements Observable{
         List<String> favoToString = new ArrayList<>();
             List<FavoriteDto> favos = favoritesRepository.getAll();
             for(FavoriteDto fav:favos) {
-                String toString = "" + fav.getKey() + ": " + fav.getOrigin() + "==>" + fav.getDestination();
-                favoToString.add(toString);
+                favoToString.add(fav.getKey());
             }
         return favoToString;
     }
@@ -86,7 +87,7 @@ public class Model implements Observable{
      * @return the favorite with the given id
      * @throws RepositoryException
      */
-    public List<FavoriteDto> getFavorite(int id) throws RepositoryException {
+    public FavoriteDto getFavorite(String id) throws RepositoryException {
 
             return favoritesRepository.get(id);
 
@@ -97,7 +98,7 @@ public class Model implements Observable{
      * @param id the id of the favorite to delete
      * @throws RepositoryException
      */
-    public void deleteFav(int id) throws RepositoryException {
+    public void deleteFav(String id) throws RepositoryException {
             favoritesRepository.remove(id);
             notifyObservers();
     }
@@ -113,8 +114,8 @@ public class Model implements Observable{
         List<String> pathNames = stibGraph.getPath();
         path.clear();
         for(String name: pathNames) {
-                List<StopDto> stop = stopRepository.get(name);
-                path.addAll(stop);
+                StopDto stop = stopRepository.get(name);
+                path.add(stop);
         }
         notifyObservers();
     }
@@ -123,10 +124,11 @@ public class Model implements Observable{
      * inserts a favorite in the database
      * @param begin the begin station of the new favorite
      * @param end the end station of the new favorite
+     * @param name
      * @throws RepositoryException
      */
-    public void insertFavoite(String begin, String end) throws RepositoryException {
-            favoritesRepository.add(new FavoriteDto(0,begin,end));
+    public void insertFavoite(String begin, String end, String name) throws RepositoryException {
+            favoritesRepository.add(new FavoriteDto(name,begin,end));
             notifyObservers();
     }
 

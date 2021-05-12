@@ -3,14 +3,12 @@ package g55315.model.repository;
 
 
 import g55315.model.dto.FavoriteDto;
-import g55315.model.dto.LineDto;
 import g55315.model.exception.RepositoryException;
 import g55315.model.jdbc.FavoriteDao;
-import g55315.model.jdbc.LineDao;
 
 import java.util.List;
 
-public class FavoritesRepository implements Repository<Integer, FavoriteDto> {
+public class FavoritesRepository implements Repository<String, FavoriteDto> {
 
     private final FavoriteDao dao;
 
@@ -29,24 +27,30 @@ public class FavoritesRepository implements Repository<Integer, FavoriteDto> {
     }
 
     @Override
-    public List<FavoriteDto> get(Integer key) throws RepositoryException {
-        List<FavoriteDto> refreshItem = dao.select(key);
+    public FavoriteDto get(String key) throws RepositoryException {
+        FavoriteDto refreshItem = dao.select(key);
         return refreshItem;
     }
 
     @Override
-    public boolean contains(Integer key) throws RepositoryException {
-        List<FavoriteDto> refreshItem = dao.select(key);
+    public boolean contains(String key) throws RepositoryException {
+        FavoriteDto refreshItem = dao.select(key);
         return refreshItem != null;
     }
 
     @Override
-    public Integer add(FavoriteDto item) throws RepositoryException {
-        return dao.insert(item);
+    public String add(FavoriteDto item) throws RepositoryException {
+        String key = item.getKey();
+        if (contains(key)) {
+            dao.update(item);
+        } else {
+            key = dao.insert(item);
+        }
+        return key;
     }
 
     @Override
-    public void remove(Integer key) throws RepositoryException {
+    public void remove(String key) throws RepositoryException {
         dao.delete(key);
     }
 

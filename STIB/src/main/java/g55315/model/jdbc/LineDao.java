@@ -5,7 +5,6 @@ import g55315.model.dto.StopDto;
 import g55315.model.repository.Dao;
 import g55315.model.exception.*;
 
-import javax.sound.sampled.Line;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +62,7 @@ import java.util.List;
 
 
         @Override
-        public List<LineDto> select(Integer key) throws RepositoryException {
+        public LineDto select(Integer key) throws RepositoryException {
             if (key == null) {
                 throw new RepositoryException("Aucune clé donnée en paramètre");
             }
@@ -72,35 +71,30 @@ import java.util.List;
                     " WHERE id_line=? "
                     + "ORDER BY id_order";
 
-            List<LineDto> lines = new ArrayList<>();
+            LineDto line = null;
             try (PreparedStatement pstmt = connexion.prepareStatement(sql)) {
                 pstmt.setInt(1, key);
                 ResultSet rs = pstmt.executeQuery();
+                List<StopDto> stops = new ArrayList<>();
 
-                while (rs.next()) {
-                    boolean found = false;
-                    for (LineDto line : lines) {
-                        if (line.getKey().equals(rs.getInt(1))) {
-                            found = true;
-                            List<Integer> line_id = new ArrayList<>();
-                            line_id.add(rs.getInt(1));
-                            line.addStop(new StopDto(rs.getString(4), line_id, rs.getInt(3), rs.getInt(2)));
-                            break;
-                        }
-                    }
-                    if (!found) {
-                        List<Integer> line_id = new ArrayList<>();
-                        line_id.add(rs.getInt(1));
-                        List<StopDto> stops = new ArrayList<>();
-                        stops.add(new StopDto(rs.getString(4), line_id, rs.getInt(3), rs.getInt(2)));
-                        lines.add(new LineDto(rs.getInt(1),stops));
-                    }
+                if(rs.next()){
+                    List<Integer> line_id = new ArrayList<>();
+                    line_id.add(rs.getInt(1));
+                    StopDto stop =new StopDto(rs.getString(4), line_id, rs.getInt(3), rs.getInt(2));
+                    stops.add(stop);
+                    line = new LineDto(rs.getInt(1),stops);
                 }
+                while (rs.next()) {
+                    List<Integer> line_id = new ArrayList<>();
+                    line_id.add(rs.getInt(1));
+                    StopDto stop =new StopDto(rs.getString(4), line_id, rs.getInt(3), rs.getInt(2));
+                    line.addStop(stop);
+                    }
 
             } catch (SQLException e) {
                 throw new RepositoryException(e);
             }
-            return lines;
+            return line;
         }
 
         @Override
@@ -110,6 +104,11 @@ import java.util.List;
 
         @Override
         public void delete(Integer key) throws RepositoryException {
+
+        }
+
+        @Override
+        public void update(LineDto item) throws RepositoryException {
 
         }
 

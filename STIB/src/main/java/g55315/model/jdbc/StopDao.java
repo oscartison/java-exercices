@@ -59,7 +59,7 @@ public class StopDao implements Dao<String, StopDto> {
 
 
     @Override
-    public List<StopDto> select(String key) throws RepositoryException {
+    public StopDto select(String key) throws RepositoryException {
         if (key == null) {
             throw new RepositoryException("Aucune clé donnée en paramètre");
         }
@@ -67,32 +67,28 @@ public class StopDao implements Dao<String, StopDto> {
                 + "JOIN STATIONS s ON id_station = id " +
                 " WHERE name=? "
                 + "ORDER BY id_order";
-        List<StopDto> dtos = new ArrayList<>();
+        StopDto stop = null;
         try (PreparedStatement pstmt = connexion.prepareStatement(sql)) {
             pstmt.setString(1, key);
             ResultSet rs = pstmt.executeQuery();
 
-            while (rs.next()) {
-                boolean found = false;
-                for (StopDto stop : dtos) {
-                    if (stop.getKey().equals(rs.getString(4))) {
-                        found = true;
-                        stop.addLine(rs.getInt(1));
-                        break;
-                    }
-                }
-                if (!found) {
-                    List<Integer> lines = new ArrayList<>();
+
+                List<Integer> lines = new ArrayList<>();
+
+                if (rs.next()) {
                     lines.add(rs.getInt(1));
-                    StopDto stop = new StopDto(rs.getString(4),lines, rs.getInt(3), rs.getInt(2));
-                    dtos.add(stop);
+                    stop = new StopDto(rs.getString(4), lines, rs.getInt(3), rs.getInt(2));
+
                 }
-            }
+                while (rs.next()) {
+                   stop.addLine(rs.getInt(1));
+                }
+
 
         } catch (SQLException e) {
             throw new RepositoryException(e);
         }
-        return dtos;
+        return stop;
     }
 
     @Override
@@ -102,6 +98,11 @@ public class StopDao implements Dao<String, StopDto> {
 
     @Override
     public void delete(String key) throws RepositoryException {
+
+    }
+
+    @Override
+    public void update(StopDto item) throws RepositoryException {
 
     }
 

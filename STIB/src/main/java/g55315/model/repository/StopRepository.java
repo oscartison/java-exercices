@@ -30,14 +30,14 @@ public class StopRepository implements Repository<String, StopDto> {
     }
 
     @Override
-    public List<StopDto> get(String key) throws RepositoryException {
-        List<StopDto> refreshItem = dao.select(key);
+    public StopDto get(String key) throws RepositoryException {
+        StopDto refreshItem = dao.select(key);
         return refreshItem;
     }
 
     @Override
     public boolean contains(String key) throws RepositoryException {
-        List<StopDto> refreshItem = dao.select(key);
+        StopDto refreshItem = dao.select(key);
         return refreshItem != null;
     }
 

@@ -6,6 +6,7 @@
 package g55315.model.jdbc;
 
 import g55315.model.config.ConfigManager;
+import g55315.model.dto.LineDto;
 import g55315.model.exception.RepositoryException;
 import java.io.IOException;
 import org.junit.Test;
@@ -37,7 +38,7 @@ public class LineDaoTest {
         //Arrange
         int expected = 21;
         //Action
-        int result = instance.select(1).get(0).getStops().size();
+        int result = instance.select(1).getStops().size();
         //Assert
         assertEquals(expected, result);
     }
@@ -46,11 +47,10 @@ public class LineDaoTest {
     public void testSelectNotExist() throws Exception {
         System.out.println("testSelectNotExist");
         //Arrange
-        int expected = 0;
         //Action
-        int result = instance.select(55).size();
+        LineDto result = instance.select(55);
         //Assert
-        assertEquals(expected, result);
+        assertEquals(null, result);
     }
 
        @Test

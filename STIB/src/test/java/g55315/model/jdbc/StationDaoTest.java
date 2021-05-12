@@ -38,13 +38,11 @@ public class StationDaoTest {
     @Test
     public void testSelectExist() throws Exception {
         System.out.println("testSelectExist");
-        //Arrange
-        List<StationDto> expected = new ArrayList<>();
-        expected.add(station);
+
         //Action
-        List<StationDto> result = instance.select("HEYSEL");
+        StationDto result = instance.select("HEYSEL");
         //Assert
-        assertEquals(expected, result);
+        assertEquals(station, result);
     }
 
         @Test
@@ -52,9 +50,9 @@ public class StationDaoTest {
         System.out.println("testSelectNotExist");
 
         //Action
-        List<StationDto> result = instance.select("BUBU");
+        StationDto result = instance.select("BUBU");
         //Assert
-        assertEquals(0, result.size());
+        assertEquals(null, result);
     }
 
        @Test

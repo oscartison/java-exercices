@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb3a5aa-fd40-43fe-94cc-363d8ff9c050" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/main/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/StateSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/model/StateSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/view/FxmlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/g55315/view/FxmlController.java" afterDir="false" />
-    </list>
+    <list default="true" id="8bb3a5aa-fd40-43fe-94cc-363d8ff9c050" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,5 +45,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

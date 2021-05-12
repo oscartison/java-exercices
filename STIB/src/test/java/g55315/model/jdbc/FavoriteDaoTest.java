@@ -19,9 +19,13 @@ public class FavoriteDaoTest {
     private FavoriteDao instance;
 
     private FavoriteDto fav;
+    private FavoriteDto test;
+    
 
     public FavoriteDaoTest() {
-        fav = new FavoriteDto(6, "SCHUMAN", "DELACROIX");
+        
+        fav = new FavoriteDto("ecole", "BELGICA", "HEYSEL");
+        test = new FavoriteDto("Test","ROGIER","HEYSEL");
         try {
             ConfigManager.getInstance().load();
             instance = FavoriteDao.getInstance();
@@ -37,9 +41,9 @@ public class FavoriteDaoTest {
         //Arrange
         FavoriteDto expected = fav;
         //Action
-        List<FavoriteDto> result = instance.select(6);
+        FavoriteDto result = instance.select("ecole");
         //Assert
-        assertEquals(expected, result.get(0));
+        assertEquals(expected, result);
     }
 
         @Test
@@ -47,16 +51,16 @@ public class FavoriteDaoTest {
         System.out.println("testSelectNotExist");
         //Arrange
         //Action
-        List<FavoriteDto> result = instance.select(22);
+        FavoriteDto result = instance.select("fefe");
         //Assert
-        assertEquals(result.size(),0);
+        assertEquals(result,null);
     }
 
        @Test
     public void testSelectIncorrectParameter() throws Exception {
         System.out.println("testSelectIncorrectParameter");
         //Arrange
-        Integer incorrect = null;
+        String incorrect = null;
         //Assert
         assertThrows(RepositoryException.class, () -> {
             //Action
@@ -64,20 +68,12 @@ public class FavoriteDaoTest {
         });
     }
 
-    @Test
-    public void testDeleteExist() throws Exception {
-        System.out.println("TestDelete");
-        instance.delete(7);
-        
-        List<FavoriteDto> result = instance.select(7);
-        //Assert
-        assertEquals(result.size(),0);
-    }
+
 
     @Test
     public void testDeleteFalseParam() throws Exception {
         System.out.println("TestDelete");
-       Integer incorrect = null;
+       String incorrect = null;
         //Assert
         assertThrows(RepositoryException.class, () -> {
             //Action
@@ -85,30 +81,8 @@ public class FavoriteDaoTest {
         });
     }
     
-     @Test
-    public void testSelectAll() throws Exception {
-        System.out.println("testSelectAll");
-        //Arrange
-        List<FavoriteDto> expected = new ArrayList<>();
-        expected.add(fav);
-        //Action
-        List<FavoriteDto> result = instance.selectAll();
-        //Assert
-        assertEquals(expected, result);
-    }
-    
-     @Test
-    public void testInsert() throws Exception {
-        System.out.println("testSelectAll");
-        
-        int sizeBefore = instance.selectAll().size();
-        //Arrange
-        instance.insert(new FavoriteDto(0,"HEYSEL","HEYSEL"));
-        
-        int sizeAfter = instance.selectAll().size();
-        //Assert
-        assertNotEquals(sizeBefore, sizeAfter);
-    }
+
+
     
     
     

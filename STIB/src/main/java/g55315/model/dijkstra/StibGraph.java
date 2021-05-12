@@ -3,7 +3,6 @@ package g55315.model.dijkstra;
 import g55315.model.config.ConfigManager;
 import g55315.model.dto.LineDto;
 import g55315.model.dto.StationDto;
-import g55315.model.dto.StopDto;
 import g55315.model.exception.RepositoryException;
 import g55315.model.repository.LineRepository;
 import g55315.model.repository.StationRepository;

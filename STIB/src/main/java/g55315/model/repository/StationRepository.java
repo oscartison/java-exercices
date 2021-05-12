@@ -1,10 +1,8 @@
 package g55315.model.repository;
 
 import g55315.model.dto.StationDto;
-import g55315.model.dto.StopDto;
 import g55315.model.exception.RepositoryException;
 import g55315.model.jdbc.StationDao;
-import g55315.model.jdbc.StopDao;
 
 import java.util.List;
 
@@ -27,14 +25,14 @@ public class StationRepository implements Repository<String, StationDto> {
     }
 
     @Override
-    public List<StationDto> get(String key) throws RepositoryException {
-        List<StationDto> refreshItem = dao.select(key);
+    public StationDto get(String key) throws RepositoryException {
+        StationDto refreshItem = dao.select(key);
         return refreshItem;
     }
 
     @Override
     public boolean contains(String key) throws RepositoryException {
-        List<StationDto> refreshItem = dao.select(key);
+        StationDto refreshItem = dao.select(key);
         return refreshItem != null;
     }
 

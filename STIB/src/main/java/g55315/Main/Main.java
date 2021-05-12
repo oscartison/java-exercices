@@ -1,4 +1,4 @@
-package g55315;
+package g55315.Main;
 
 import g55315.presenter.Presenter;
 import g55315.view.FxmlController;

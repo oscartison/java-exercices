@@ -5,10 +5,7 @@ import g55315.model.exception.RepositoryException;
 import g55315.presenter.Presenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import org.controlsfx.control.SearchableComboBox;
 import javafx.fxml.FXML;
 
@@ -28,6 +25,9 @@ public class FxmlController implements Initializable {
 
     @FXML
     private SearchableComboBox<String> destination;
+
+    @FXML
+    private TextField favoName;
 
 
     @FXML
@@ -73,7 +73,8 @@ public class FxmlController implements Initializable {
     @FXML
     public void addFavorite(ActionEvent e) throws  RepositoryException {
         if(origine.getValue()!=null && destination.getValue()!=null) {
-            presenter.addFavorite(origine.getValue(), destination.getValue());
+
+            presenter.addFavorite(origine.getValue(), destination.getValue(),favoName.getText());
         }
     }
 

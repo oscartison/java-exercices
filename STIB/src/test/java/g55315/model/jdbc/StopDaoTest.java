@@ -43,12 +43,11 @@ public class StopDaoTest {
     public void testSelectExist() throws Exception {
         System.out.println("testSelectExist");
         //Arrange
-        List<StopDto> expected = new ArrayList<>();
-        expected.add(stop);
+
         //Action
-        List<StopDto> result = instance.select("HEYSEL");
+        StopDto result = instance.select("HEYSEL");
         //Assert
-        assertEquals(expected, result);
+        assertEquals(stop, result);
     }
 
         @Test
@@ -56,9 +55,9 @@ public class StopDaoTest {
         System.out.println("testSelectNotExist");
 
         //Action
-        List<StopDto> result = instance.select("BUBU");
+        StopDto result = instance.select("BUBU");
         //Assert
-        assertEquals(0, result.size());
+        assertEquals(null, result);
     }
 
        @Test

@@ -1,4 +1,4 @@
-package g55315.model;
+package g55315.model.designpattern;
 
 /**
  *

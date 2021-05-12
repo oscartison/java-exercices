@@ -1,7 +1,6 @@
 package g55315.model.jdbc;
 
 import g55315.model.dto.StationDto;
-import g55315.model.dto.StopDto;
 import g55315.model.exception.RepositoryException;
 import g55315.model.repository.Dao;
 
@@ -42,25 +41,25 @@ public class StationDao implements Dao<String, StationDto> {
 
 
     @Override
-    public List<StationDto> select(String key) throws RepositoryException {
+    public StationDto select(String key) throws RepositoryException {
         if (key == null) {
             throw new RepositoryException("Aucune clé donnée en paramètre");
         }
         String sql = "SELECT id,name FROM STATIONS WHERE name = ?";
-        List<StationDto> dtos = new ArrayList<>();
+        StationDto stat = null;
         try (PreparedStatement pstmt = connexion.prepareStatement(sql)) {
             pstmt.setString(1, key);
             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()) {
-                StationDto stat = new StationDto(rs.getString(2), rs.getInt(1));
-                dtos.add(stat);
+                 stat = new StationDto(rs.getString(2), rs.getInt(1));
+
             }
 
         } catch (SQLException e) {
             throw new RepositoryException(e);
         }
-        return dtos;
+        return stat;
     }
 
     @Override
@@ -70,6 +69,11 @@ public class StationDao implements Dao<String, StationDto> {
 
     @Override
     public void delete(String key) throws RepositoryException {
+
+    }
+
+    @Override
+    public void update(StationDto item) throws RepositoryException {
 
     }
 

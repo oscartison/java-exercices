@@ -32,7 +32,7 @@ public interface Dao<K, T extends Dto<K>> {
      * @return an element based on its key.
      * @throws RepositoryException if the resource can't be accessed.
      */
-    List<T> select(K key) throws RepositoryException;
+    T select(K key) throws RepositoryException;
 
     /**
      * Inserts an element into the resource.
@@ -51,6 +51,15 @@ public interface Dao<K, T extends Dto<K>> {
      */
     void delete(K key) throws RepositoryException;
 
+
+    /**
+     * Update an element of the resource. The search of the element is based on
+     * its key.
+     *
+     * @param item item to update.
+     * @throws RepositoryException if the resource can't be accessed.
+     */
+    void update(T item) throws RepositoryException;
 
 
     }

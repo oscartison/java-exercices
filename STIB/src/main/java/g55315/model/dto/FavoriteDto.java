@@ -3,9 +3,10 @@ package g55315.model.dto;
 /**
  * class representing the favorite trajects
  */
-public class FavoriteDto extends Dto<Integer> {
+public class FavoriteDto extends Dto<String> {
     private String origin;
     private String destination;
+
 
 
     /**
@@ -24,13 +25,15 @@ public class FavoriteDto extends Dto<Integer> {
         return origin;
     }
 
+
+
     /**
      * a constructor for the class
      * @param key the id of this favorite
      * @param origin the origin station
      * @param destination the destination station
      */
-    public FavoriteDto(Integer key, String origin, String destination) {
+    public FavoriteDto(String key, String origin, String destination) {
         super(key);
         this.destination = destination;
         this.origin = origin;

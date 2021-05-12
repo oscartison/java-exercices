@@ -48,18 +48,7 @@ public class StopDto extends Dto<String> {
     }
 
 
-    /**
-     * a function that represents the lines in a string
-     * @return a string containing al the lines of this stop
-     */
-    public String getLinesToString() {
-        String lines = "[ ";
-        for(int line: id_line) {
-            lines += line + " ";
-        }
-        lines +="]";
-        return lines;
-    }
+
 
     /**
      * the constructor of this class

@@ -30,10 +30,10 @@ public class FavoritesRepositoryTest {
         //Arrange
         FavoritesRepository repository = new FavoritesRepository(mock);
         //Action
-        List<FavoriteDto> result = repository.get(6);
+        FavoriteDto result = repository.get("ecole");
         //Assert        
 
-        Mockito.verify(mock, times(1)).select(6);
+        Mockito.verify(mock, times(1)).select("ecole");
     }
 
     @Test
@@ -42,10 +42,10 @@ public class FavoritesRepositoryTest {
        //Arrange
         FavoritesRepository repository = new FavoritesRepository(mock);
         //Action
-        List<FavoriteDto> result = repository.get(6);
+        FavoriteDto result = repository.get("fwwf");
         //Assert        
 
-        Mockito.verify(mock, times(1)).select(6);
+        Mockito.verify(mock, times(1)).select("fwwf");
     }
 
 //     @Test
@@ -70,10 +70,10 @@ public class FavoritesRepositoryTest {
         //Arrange
         FavoritesRepository repository = new FavoritesRepository(mock);
         //Action
-         repository.remove(6);
+         repository.remove("ecole");
         //Assert        
 
-        Mockito.verify(mock, times(1)).delete(6);
+        Mockito.verify(mock, times(1)).delete("ecole");
     }
     
         @Test
@@ -82,7 +82,7 @@ public class FavoritesRepositoryTest {
         //Arrange
         FavoritesRepository repository = new FavoritesRepository(mock);
         
-        FavoriteDto test = new FavoriteDto(0,"HEYSEL","ROGIER");
+        FavoriteDto test = new FavoriteDto("bonjour","HEYSEL","ROGIER");
         //Action
          repository.add(test);
         //Assert        

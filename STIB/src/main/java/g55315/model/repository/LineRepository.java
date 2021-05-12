@@ -27,14 +27,14 @@ public class LineRepository implements Repository<Integer, LineDto> {
     }
 
     @Override
-    public List<LineDto> get(Integer key) throws RepositoryException {
-        List<LineDto> refreshItem = dao.select(key);
+    public LineDto get(Integer key) throws RepositoryException {
+        LineDto refreshItem = dao.select(key);
         return refreshItem;
     }
 
     @Override
     public boolean contains(Integer key) throws RepositoryException {
-        List<LineDto> refreshItem = dao.select(key);
+        LineDto refreshItem = dao.select(key);
         return refreshItem != null;
     }
 
