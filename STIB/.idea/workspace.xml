@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10c712d1-42ef-43fa-9904-c6d099efcda8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sqlite/populate.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sqlite/stib.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sqlite/stibTest.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/Main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/config/ConfigManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/designpattern/Observable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/designpattern/Observer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dijkstra/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dijkstra/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dijkstra/ShortestPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dijkstra/StibGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dto/Dto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dto/FavoriteDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dto/LineDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dto/StationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/dto/StopDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/exception/RepositoryException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/jdbc/DBManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/jdbc/FavoriteDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/jdbc/LineDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/jdbc/StationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/jdbc/StopDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/repository/Dao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/repository/FavoritesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/repository/LineRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/repository/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/repository/StationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/model/repository/StopRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/presenter/Presenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/g55315/view/FxmlController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/metro.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/jdbc/FavoriteDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/jdbc/LineDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/jdbc/StationDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/jdbc/StopDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/repository/FavoritesRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/repository/LineRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/repository/StationRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/g55315/model/repository/StopRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/metro.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-g55315.model.jdbc.FavoriteDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-g55315.model.jdbc.LineDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-g55315.model.jdbc.StationDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-g55315.model.jdbc.StopDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-g55315.model.repository.StationRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-g55315.model.repository.StopRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/g55315.model.jdbc.FavoriteDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/g55315.model.jdbc.LineDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/g55315.model.jdbc.StationDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/g55315.model.jdbc.StopDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/g55315.model.repository.StationRepositoryTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/g55315.model.repository.StopRepositoryTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/config/config.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1s9RdgIXttnjjXFxfjNfmeJdAgU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StibRider" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar\Desktop\o-tison\STIB\src\main\java\g55315\model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="g55315.model.jdbc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="g55315.Test" />
+      <module name="STIB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="g55315.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10c712d1-42ef-43fa-9904-c6d099efcda8" name="Default Changelist" comment="" />
+      <created>1620282913314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620282913314</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
