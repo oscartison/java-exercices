@@ -4,7 +4,7 @@ Ce git contiendra tous les TDs pour le cours d'ATLG4
 ## Table of contents
 * [TD01](#TD01)
 * [TD02](#TD02)
-* [SortingRace][#SortingRace]
+* [SortingRace](#SortingRace)
 * [StibRider](#StibRider)
 
 
