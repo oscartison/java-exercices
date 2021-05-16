@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author jlc
+ * class representing the database acces for the stops
+ * @author Oscar Tison
  */
 public class StopDao implements Dao<String, StopDto> {
 

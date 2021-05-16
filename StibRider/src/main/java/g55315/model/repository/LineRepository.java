@@ -8,6 +8,9 @@ import g55315.model.jdbc.LineDao;
 
 import java.util.List;
 
+/**
+ * class that manages the Line part of the database
+ */
 public class LineRepository implements Repository<Integer, LineDto> {
 
     private final LineDao dao;

@@ -8,8 +8,7 @@ import g55315.model.jdbc.StopDao;
 import java.util.List;
 
 /**
- *
- * @author jlc
+ * class that manages the stop part of the database
  */
 public class StopRepository implements Repository<String, StopDto> {
 

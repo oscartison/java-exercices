@@ -8,6 +8,9 @@ import g55315.model.jdbc.FavoriteDao;
 
 import java.util.List;
 
+/**
+ * class that manages the favorite part of the database
+ */
 public class FavoritesRepository implements Repository<Integer, FavoriteDto> {
 
     private final FavoriteDao dao;

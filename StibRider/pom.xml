@@ -96,7 +96,7 @@
                     <source>14</source>
                     <target>14</target>
                     <release>14</release>
-                    <mainClass>g55315.Main.Main</mainClass>
+                    <mainClass>g55315.main.Main</mainClass>
                 </configuration>
             </plugin>
 

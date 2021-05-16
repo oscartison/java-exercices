@@ -8,6 +8,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * class representing the database acces for the stations
+ * @author Oscar Tison
+ */
 public class StationDao implements Dao<String, StationDto> {
 
     private Connection connexion;

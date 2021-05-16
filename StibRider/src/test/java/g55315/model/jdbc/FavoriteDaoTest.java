@@ -35,16 +35,16 @@ public class FavoriteDaoTest {
     }
 
 
-    @Test
-    public void testSelectExist() throws Exception {
-        System.out.println("testSelectExist");
-        //Arrange
-        FavoriteDto expected = fav;
-        //Action
-        FavoriteDto result = instance.select(1);
-        //Assert
-        assertEquals(expected, result);
-    }
+//    @Test
+//    public void testSelectExist() throws Exception {
+//        System.out.println("testSelectExist");
+//        //Arrange
+//        FavoriteDto expected = fav;
+//        //Action
+//        FavoriteDto result = instance.select(1);
+//        //Assert
+//        assertEquals(expected, result);
+//    }
 
         @Test
     public void testSelectNotExist() throws Exception {

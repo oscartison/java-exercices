@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
     /**
-     *
-     * @author jlc
+     * class representing the database acces for the line
+     * @author Oscar Tison
      */
     public class LineDao implements Dao<Integer, LineDto> {
 

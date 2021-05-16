@@ -1,4 +1,4 @@
-package g55315.Main;
+package g55315.main;
 
 import g55315.presenter.Presenter;
 import g55315.view.FxmlController;
@@ -9,11 +9,19 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
+    /**
+     * entry point of the application
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
 
+    /**
+     * starts the javaFX application
+     * @param stage
+     * @throws Exception
+     */
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/view.fxml"));

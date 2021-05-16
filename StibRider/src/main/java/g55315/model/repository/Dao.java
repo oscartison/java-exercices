@@ -1,6 +1,5 @@
 package g55315.model.repository;
 
-import g55315.model.dto.StopDto;
 import g55315.model.exception.RepositoryException;
 import g55315.model.dto.Dto;
 

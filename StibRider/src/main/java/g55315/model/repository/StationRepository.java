@@ -6,6 +6,9 @@ import g55315.model.jdbc.StationDao;
 
 import java.util.List;
 
+/**
+ * class that manages the station part of the database
+ */
 public class StationRepository implements Repository<String, StationDto> {
 
     private final StationDao dao;
